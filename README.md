@@ -44,9 +44,8 @@ THEN the saved events persist
 
 
 
-
 ## GIFs
-
+![WorkDayScheduler](https://user-images.githubusercontent.com/55207625/80655776-5c518400-8a34-11ea-9662-4fa8701c586e.gif)
 
 
 
