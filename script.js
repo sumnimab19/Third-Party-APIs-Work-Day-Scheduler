@@ -17,29 +17,40 @@ function timeCheck(){
     
     for (let i = 0; i < labelArray.length; i++) {  
         if((labelArray[i] === "one") || (labelArray[i] === "two") || (labelArray[i] === "three") ||(labelArray[i] === "four") ||(labelArray[i] === "five")) {
-            var labelTime = (parseInt ($("label#"+ labelArray[i]).text())) + 12; 
+            var labelTime = (parseInt ($("label#"+ labelArray[i]).text())) ; 
         } else {
             var labelTime = (parseInt ($("label#"+ labelArray[i]).text())); 
         }
 
         if((labelArray[i] === "one") || (labelArray[i] === "two") || (labelArray[i] === "three") ||(labelArray[i] === "four") ||(labelArray[i] === "five")) {
-            currentTime = currentTime + 12; 
-        } else {
-            currentTime = currentTime;
-        }
 
-        var presentRow = $("textarea#" + inputRows[i]);
-        if(currentTime === labelTime) {
-            presentRow.addClass("present");
-        } 
-        if ((currentTime < labelTime)){
-            presentRow.addClass("past");
-        } 
-        if ((currentTime > labelTime)){
-            presentRow.addClass("future");
-        } 
+            var presentRow = $("textarea#" + inputRows[i]);
+            if(currentTime === labelTime) {
+                presentRow.addClass("present");
+            } 
+            if ((currentTime > labelTime)){
+                presentRow.addClass("past");
+            } 
+            if ((currentTime < labelTime)){
+                presentRow.addClass("future");
+            } 
+            
+        } else {
+
+            var presentRow = $("textarea#" + inputRows[i]);
+            if(currentTime === labelTime) {
+                presentRow.addClass("present");
+            } 
+            if ((currentTime < labelTime)){
+                presentRow.addClass("past");
+            } 
+            if ((currentTime > labelTime)){
+                presentRow.addClass("future");
+            } 
+        }
     }
 }
+
 
 getValueFromLocalStorage();
 timeCheck();
