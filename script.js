@@ -83,8 +83,7 @@ function getValueFromLocalStorage(){
 // This function clear the localstorage data if stored date is not equal to today's date
 function notTodayClearData(){
     var getData = JSON.parse(localStorage.getItem("todayDate"));
-    console.log((today.format("LL")))
-    console.log(getData)
+    
     if(getData !== (today.format("LL"))){
         localStorage.clear();
         $("textarea").val("");
