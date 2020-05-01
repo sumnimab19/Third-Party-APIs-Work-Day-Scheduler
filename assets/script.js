@@ -1,6 +1,6 @@
-// These functions refreshes the page ever 60 seconds.
+// These functions refreshes the page ever 5 minutes.
 $(document).ready(function(){
-    setInterval(function(){ reload_page(); },60000);
+    setInterval(function(){ reload_page(); },300000);
  });
 
  function reload_page()
