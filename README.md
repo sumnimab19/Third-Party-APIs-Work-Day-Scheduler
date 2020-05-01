@@ -1,6 +1,6 @@
 # Third-Party-APIs-Work-Day-Scheduler
 
-This application is a simple calendar application that allows the user to save events for each business stantard hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by the jQuery. 
+This application is a simple calendar application that allows the user to save events for each stantard business hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by the jQuery. 
 
 
 ## Description
