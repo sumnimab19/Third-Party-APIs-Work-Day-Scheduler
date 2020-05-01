@@ -5,7 +5,7 @@ This application is a simple calendar application that allows the user to save e
 
 ## Description
 
-The [Moment.js](https://momentjs.com/) library is used to work with date and time. Auto refresh feature has been added to the page will refresh every 5 minutes. That way, color on each timeblock for past-grey /present-red /future-green changes automatically after 5 minutes without requiring the user to refresh the page. Another worth mentioning feature is - The content of the each timeblock will be deleted every new day. So that, user will have new blank Day scheduler everyday. 
+The [Moment.js](https://momentjs.com/) library is used to work with date and time. Auto refresh feature has been added to the page to make it refresh every 5 minutes. That way, color on each timeblock for past-grey /present-red /future-green changes automatically after 5 minutes without requiring the user to refresh the page. Another worth mentioning feature is - The content of the each timeblock will be deleted every new day. So that, user will have new blank Day scheduler everyday. 
 
 
 ## Use Cases
