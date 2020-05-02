@@ -65,8 +65,12 @@ buttonEl.on("click", saveDataToLocalStorage)
 // This function saves input data to localstorage
 function saveDataToLocalStorage(){
     for (var i = 0; i < inputRows.length; i++) {
-        var inputText = $("textarea#" + inputRows[i]).val();
-        localStorage.setItem(taskArray[i], JSON.stringify(inputText));
+        var btnClicked = ($(this).attr("Value"));
+        if(btnClicked === $("textarea#" + inputRows[i]).attr("Value")){
+            var inputText = $("textarea#" + inputRows[i]).val();
+            console.log(inputText)
+            localStorage.setItem(taskArray[i], JSON.stringify(inputText));
+        }
     }
     localStorage.setItem("todayDate",JSON.stringify(today.format("LL")))
 }
