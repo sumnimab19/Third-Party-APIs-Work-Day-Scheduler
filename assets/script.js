@@ -68,7 +68,6 @@ function saveDataToLocalStorage(){
         var btnClicked = ($(this).attr("Value"));
         if(btnClicked === $("textarea#" + inputRows[i]).attr("Value")){
             var inputText = $("textarea#" + inputRows[i]).val();
-            console.log(inputText)
             localStorage.setItem(taskArray[i], JSON.stringify(inputText));
         }
     }
